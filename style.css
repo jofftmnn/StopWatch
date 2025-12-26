@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow: hidden;
+}
+
+
+/* PHONE BODY */
+.container {
+    width: 360px;
+    max-width: 95%;
+    background: #000;
+    padding: 28px 20px 30px;
+    border-radius: 42px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.7);
+    text-align: center;
+}
+
+/* TITLE */
+h1 {
+    color: #fff;
+    font-size: 1.05em;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+}
+
+/* CIRCLE DISPLAY */
+.display-wrapper {
+    width: 260px;
+    height: 260px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    border: 4px solid #1db954;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display {
+    color: #fff;
+    font-size: 2.1em;
+    font-weight: 600;
+    font-family: "SF Mono", "Courier New", monospace;
+    letter-spacing: 2px;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    font-size: 0.75em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* BUTTON COLORS */
+#startBtn { background: #1db954; }
+#stopBtn  { background: #ff3b30; }
+#lapBtn,
+#resetBtn { background: #3a3a3c; }
+
+/* LAPS */
+.laps-container {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.laps-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.laps-header h2 {
+    color: #aaa;
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+#clearLapsBtn {
+    background: none;
+    color: #ff453a;
+    font-size: 0.75em;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+#laps {
+    list-style: none;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+#laps li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #222;
+    font-family: "SF Mono", monospace;
+    font-size: 0.85em;
+}
+
+.lap-number { color: #aaa; }
+.lap-time   { color: #fff; }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <div class="animated-bg"></div>
+
+   
+    <div class="container">
+        <h1>STOPWATCH</h1>
+
+        <div class="display-wrapper">
+            <div class="display" id="display">00:00:00.000</div>
+        </div>
+
+        <div class="buttons">
+            <button id="lapBtn" disabled>LAP</button>
+            <button id="startBtn">START</button>
+            <button id="stopBtn" disabled>STOP</button>
+            <button id="resetBtn" disabled>RESET</button>
+        </div>
+
+        <div class="laps-container">
+            <div class="laps-header">
+                <h2>Laps</h2>
+                <button id="clearLapsBtn" disabled>CLEAR</button>
+            </div>
+            <ul id="laps"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
